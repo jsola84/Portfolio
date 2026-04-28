@@ -34,7 +34,16 @@ main {
   color: black;
 }
 
-.sobre-mi,
+.cont__sobre_mi {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+.sobre_mi,
 .proyectos,
 .habilidades {
   max-width: 800px;
@@ -53,4 +62,59 @@ main {
 
 .sobre_mi a:hover {
   text-decoration: underline;
+}
+
+.foto_cara {
+  width: 26mm;
+  height: 32mm;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cont__contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv_link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+}
+
+.cv_img {
+  display: block;
+  width: 120px;
+  height: auto;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.cv_img:hover {
+  transform: scale(1.05);
+}
+
+.skills_group {
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skills span {
+  background-color: #1e90ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
 }
