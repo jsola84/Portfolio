@@ -43,6 +43,12 @@ main {
   margin: 0;
 }
 
+.cont__titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
 .foto_cara {
   width: 40mm;
   height: 40mm;
