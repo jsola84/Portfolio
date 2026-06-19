@@ -1,58 +1,55 @@
 body {
   font-family: Arial, sans-serif;
-  color: white;
   background-color: #000000;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header__nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.header__nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.header__nav a:hover {
-  text-decoration: underline;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  color: white;
   align-items: center;
   width: 40%;
   gap: 40px;
   padding: 40px;
-  background-color: white;
-  color: black;
-}
-
-.cont__sobre_mi {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 30px;
-  margin-right: 200px;
-  margin-bottom: 20px;
 }
 
 .sobre_mi,
 .proyectos,
 .habilidades {
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   text-align: center;
+  width: 100%;
+}
+.cont__sobre_mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.sobre_mi h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+.cont__sobre_mi h1 {
+  font-size: clamp(1.2rem, 5vm, 2rem);
+  text-align: center;
+  word-break: break-word;
+  margin: 0;
+}
+
+.foto_cara {
+  width: 40mm;
+  height: 40mm;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  border-radius: 50%;
 }
 
 .sobre_mi a {
@@ -64,19 +61,17 @@ main {
   text-decoration: underline;
 }
 
-.foto_cara {
-  width: 26mm;
-  height: 32mm;
-  object-fit: cover;
-  object-position: center;
-}
+/* -- Contacto -- */
 
 .cont__contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
+
+/* -- CV --*/
 
 .cv_link {
   display: inline-flex;
@@ -100,6 +95,8 @@ main {
   transform: scale(1.05);
 }
 
+/* -- Skills -- */
+
 .skills_group {
   margin-bottom: 20px;
 }
@@ -117,4 +114,26 @@ main {
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.9em;
+}
+
+/* TABLET (768px+) */
+
+@media (min-width: 768px) {
+  main {
+    width: 70%;
+    padding: 40px;
+  }
+
+  .cont__sobre_mi {
+    flex-direction: row-reverse; /* tablet+: foto a la derecha, nombre a la izquierda */
+    justify-content: center;
+  }
+}
+
+/* DESKTOP (1024px+) */
+
+@media (min-width: 1024px) {
+  main {
+    width: 40%;
+  }
 }
