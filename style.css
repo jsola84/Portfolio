@@ -129,6 +129,11 @@ main {
   font-size: 0.9em;
 }
 
+.skills span:hover {
+  background-color: #6fd1cd;
+  color: black;
+  cursor: pointer;
+}
 .skills_group {
   display: flex;
   flex-direction: column;
@@ -144,6 +149,19 @@ main {
   line-height: 0.5;
 }
 
+.proy__link {
+  text-decoration: none;
+  color: white;
+}
+
+.proy__link:hover {
+  color: #6fd1cd;
+  font-size: 20px;
+}
+
+.institutos {
+  list-style-type: none;
+}
 /* TABLET (768px+) */
 
 @media (min-width: 768px) {
