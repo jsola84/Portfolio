@@ -18,8 +18,10 @@ main {
 }
 
 .sobre_mi,
+.tecnologias,
+.experiencia,
 .proyectos,
-.tecnologias {
+.redes_sociales {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,6 +127,21 @@ main {
   padding: 6px 12px;
   border-radius: 4px;
   font-size: 0.9em;
+}
+
+.skills_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.exper__prev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.5;
 }
 
 /* TABLET (768px+) */
