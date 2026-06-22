@@ -1,22 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #0b0f14;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+header,
+main,
+footer {
+  width: min(800px, 90%);
+  background-color: #111827;
+  padding: 40px;
+  margin: 0; 
+  box-sizing: border-box;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  color: white;
   align-items: center;
-  width: 40%;
   gap: 40px;
-  padding: 40px;
+  color: white;
 }
 
+footer {
+  border-radius: 0 0 12px 12px; /* redondea solo abajo */
+  text-align: center;
+}
+
+.sobre_mi {
+  width: 100%;
+}
 .sobre_mi,
 .tecnologias,
 .experiencia,
@@ -25,9 +47,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   text-align: center;
-  width: 100%;
 }
 .cont__sobre_mi {
   display: flex;
@@ -162,24 +182,19 @@ main {
 .institutos {
   list-style-type: none;
 }
-/* TABLET (768px+) */
 
-@media (min-width: 768px) {
-  main {
-    width: 70%;
-    padding: 40px;
-  }
-
-  .cont__sobre_mi {
-    flex-direction: row-reverse; /* tablet+: foto a la derecha, nombre a la izquierda */
-    justify-content: center;
-  }
+hr {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 4rem 0;
 }
 
-/* DESKTOP (1024px+) */
-
-@media (min-width: 1024px) {
-  main {
-    width: 40%;
-  }
+.separador__section {
+  width: 40%;
+  border: 0;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 4rem 0;
 }
