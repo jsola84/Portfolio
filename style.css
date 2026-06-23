@@ -16,11 +16,47 @@ body {
 header,
 main,
 footer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+header.visible,
+main.visible,
+footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header,
+main,
+footer {
   width: min(800px, 90%);
   background-color: #111827;
   padding: 40px;
-  margin: 0; 
+  margin: 0;
   box-sizing: border-box;
+}
+
+.nav_menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav_menu a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav_menu a:hover {
+  color: white;
 }
 
 main {
@@ -66,7 +102,7 @@ footer {
 }
 
 #localizacion {
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 .cont__titulos {
@@ -91,6 +127,12 @@ footer {
 
 .sobre_mi a:hover {
   text-decoration: underline;
+}
+.separador_titulos {
+  width: 5%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 5px;
 }
 
 /* -- Contacto -- */

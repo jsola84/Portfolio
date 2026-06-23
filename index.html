@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav class="sobre_mi">
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="#sobre_mi">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#formacion">Formación</a></li>
+            </ul>
+        </nav>
+        <div class="sobre_mi" id="sobre_mi">
             <div class="cont__sobre_mi">
                 <div class="cont__titulos">
                     <h1>Jaime Solà Ceada</h1>
@@ -23,8 +33,10 @@
                 <a href="https://share.google/nuWOdd8A7Vd1G6rMN" target="_blank"
                     id="localizacion"><span>&#x1F4CD;</span>
                     Malgrat de Mar</a>
+
             </div>
             <h4>Sobre mí</h4>
+            <hr class="separador_titulos">
             <p>Hola! Me llamo Jaime Solà y soy un desarrollador web full-stack.</p>
             <div class="cont__contacto">
                 <a href="assets/Jaime_Solà_Ceada_curriculum.pdf" target="_blank" class="cv_link"> <img
@@ -33,12 +45,12 @@
                 </a>
                 <a href="mailto:jsola26@gmail.com">jsola26@gmail.com</a>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <hr>
-        <section class="tecnologias">
+        <section class="tecnologias" id="tecnologias">
             <h2>Tecnologías</h2>
             <div class="skills_group">
                 <div class="skills">
@@ -56,7 +68,7 @@
             </div>
         </section>
         <hr>
-        <section class="experiencia">
+        <section class="experiencia" id="experiencia">
             <h2>Experiencia en Desarrollo de Software</h2>
             <h3>Sistemes Linux</h3>
             <h3>Desarrollador Web y de Software(Prácticas)</h3>
@@ -82,7 +94,7 @@
             </div>
         </section>
         <hr>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <h2>Proyectos</h2>
             <h3>StockApp</h3>
             <h4>Sistema de Gestión de stock</h4>
@@ -163,7 +175,7 @@
             </div>
 
             <hr>
-            <section class="formacion">
+            <section class="formacion" id="formacion">
                 <h2>Formación</h2>
                 <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
                 <h4>2026</h4>
