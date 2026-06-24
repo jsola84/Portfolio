@@ -1,11 +1,17 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   display: flex;
   flex-direction: row;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  border-style: groove;
+  width: 60%;
 }
 
 aside {
@@ -42,7 +48,7 @@ section {
 }
 
 .cont_section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
