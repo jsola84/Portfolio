@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  background: #432371;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 30%;
+  padding-left: 20px;
+}
+
+aside a {
+  color: white;
+}
+
+section {
+  width: 70%;
+  height: 100%;
+}
+
+.cont_titulo {
+  background: #50337b;
+}
+
+.cont_titulo_section {
+  background: #ededed;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
