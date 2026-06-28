@@ -22,23 +22,6 @@ h1 {
 header,
 main,
 footer {
-  opacity: 0;
-  transform: translateY(30px);
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
-}
-
-header.visible,
-main.visible,
-footer.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-header,
-main,
-footer {
   width: min(800px, 90%);
   background-color: #111827;
   padding: 40px;
@@ -250,14 +233,12 @@ hr {
 
 .icon_footer a {
   color: white;
- font-size: 2rem;
- transition: color 0.2s ease;
+  font-size: 2rem;
+  transition: color 0.2s ease;
 }
 
 .icon_footer a:hover {
   color: #60a5fa;
 }
 
-
 /* ----CURRICULUM ---- */
-

@@ -1,17 +1,26 @@
 body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+}
 main {
   display: flex;
   flex-direction: row;
   border: 2px solid #000000;
   border-radius: 5px;
   border-style: groove;
-  width: 60%;
+  width: min(900px, 90%);
 }
 
 aside {
@@ -31,24 +40,61 @@ aside a {
 
 section {
   width: 70%;
-  height: 100%;
+  padding: 20px 40px;
 }
 
 .cont_titulo {
   background: #50337b;
 }
 
-.cont_titulo_section {
+.cont_titulo_exper {
   background: #ededed;
-  width: 150px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cont_section {
-  width: 100%;
+.cont_experiencia {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont_experiencia ul {
+  padding-left: 20px;
+}
+
+.cont_experiencia h2,
+.cont_experiencia h3,
+.cont_experiencia h4,
+.cont_experiencia p {
+  margin: 4px 0;
+}
+
+.cont_titulo_habilidades {
+  margin: 4px 0;
+  background: #ededed;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.cont_habilidades ul li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    align-items: center;
+  }
+
+  section {
+    width: 100%;
+    padding: 20px;
+  }
 }
